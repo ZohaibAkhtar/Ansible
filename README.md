@@ -33,7 +33,7 @@ Ensure that the ansible.cfg, ansible.yaml, and secret.yaml files are placed in t
 # Running the Ansible Playbook:
 Run the Ansible playbook using the following command:
 ansible-playbook ansible.yaml --vault-id @prompt
-Ansible will prompt you for a vault password. In this case, the vault password is 'test', as mentioned in the instructions.
+Ansible will prompt you for a vault password. In this case, the vault password is 'test', as mentioned in the instructions. (I have excluded the secret.yaml file because it contained access to my dockerhub, you would need to create your own secret.yaml to make it work)
 
 # Accessing the Flask Application:
 Once the Ansible playbook completes successfully, you can visit the Flask application by using the IP address of the target host and port 5000. Example: http://your_target_ip:5000. (Make Sure the port 5000 is open and publically accessable.
